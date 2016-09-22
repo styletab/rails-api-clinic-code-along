@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   patch '/change-password/:id' => 'users#changepw'
   resources :users, only: [:index, :show]
 
-  resources :patients, only: [:index]
+  resources :patients, only: [:index, :show]
   # shortcut ^ the below does the same
 
 # get '/patients', to: 'books#index'
