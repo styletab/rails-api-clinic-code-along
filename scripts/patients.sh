@@ -28,3 +28,9 @@ curl --include --request PATCH http://localhost:3000/patients/2 \
       "sickness": "an example sickness"
     }
   }'
+
+
+#delete
+
+curl --include --request DELETE http://localhost:3000/patients/3 \
+  --header "Content-Type: application/json"
